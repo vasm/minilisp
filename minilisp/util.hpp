@@ -1,14 +1,12 @@
-//
-//  util.hpp
-//  minilisp
-//
-//  Created by vas on 22.10.16.
-//  Copyright © 2016 vas. All rights reserved.
-//
-
 #ifndef util_hpp
 #define util_hpp
 
-#include <stdio.h>
+#include <istream>
+
+namespace util
+{
+    void omit_whitespace(std::istream& is);
+}
+
 
 #endif /* util_hpp */

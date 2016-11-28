@@ -1,15 +1,22 @@
-//
-//  main.cpp
-//  minilisp
-//
-//  Created by vas on 22.10.16.
-//  Copyright © 2016 vas. All rights reserved.
-//
-
 #include <iostream>
+#include <sstream>
+#include <limits>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+#include "value.hpp"
+#include "exceptions.hpp"
+
+int main(int /*argc*/, const char** /*argv*/)
+{
+    std::stringstream testProgram;
+    testProgram << "(1(2(x(z(_(_1()()))()))))";
+
+    try {
+        value::ptr root = value::read(testProgram);
+        root->dump(std::cout);
+        std::cout << std::endl;
+    } catch (unexpected_symbol& ex) {
+        std::cout << ex.what() << std::endl;
+    }
+
     return 0;
 }

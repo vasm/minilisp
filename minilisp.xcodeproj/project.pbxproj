@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5DBADBF41DBB97DC007E0762 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DBADBF31DBB97DC007E0762 /* main.cpp */; };
+		5DBADBFF1DBBABC8007E0762 /* value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DBADBFE1DBBABC7007E0762 /* value.cpp */; };
+		5DBADC021DBBC65E007E0762 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DBADC001DBBC65E007E0762 /* util.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,11 @@
 /* Begin PBXFileReference section */
 		5DBADBF01DBB97DC007E0762 /* minilisp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = minilisp; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DBADBF31DBB97DC007E0762 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5DBADBFE1DBBABC7007E0762 /* value.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = value.cpp; sourceTree = "<group>"; };
+		5DBADC001DBBC65E007E0762 /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = util.cpp; sourceTree = "<group>"; };
+		5DBADC011DBBC65E007E0762 /* util.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = util.hpp; sourceTree = "<group>"; };
+		5DEA4E2A1DBBCA5D009366B0 /* value.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = value.hpp; sourceTree = "<group>"; };
+		5DEA4E2B1DBD14C5009366B0 /* exceptions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = exceptions.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +64,12 @@
 		5DBADBF21DBB97DC007E0762 /* minilisp */ = {
 			isa = PBXGroup;
 			children = (
+				5DEA4E2A1DBBCA5D009366B0 /* value.hpp */,
 				5DBADBF31DBB97DC007E0762 /* main.cpp */,
+				5DBADBFE1DBBABC7007E0762 /* value.cpp */,
+				5DBADC001DBBC65E007E0762 /* util.cpp */,
+				5DBADC011DBBC65E007E0762 /* util.hpp */,
+				5DEA4E2B1DBD14C5009366B0 /* exceptions.hpp */,
 			);
 			path = minilisp;
 			sourceTree = "<group>";
@@ -120,6 +132,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DBADBF41DBB97DC007E0762 /* main.cpp in Sources */,
+				5DBADBFF1DBBABC8007E0762 /* value.cpp in Sources */,
+				5DBADC021DBBC65E007E0762 /* util.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +260,7 @@
 				5DBADBF91DBB97DC007E0762 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
